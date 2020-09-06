@@ -11,11 +11,14 @@ box.forEach((ele) => {
 
 var container = document.getElementsByClassName('container-main')[0];
 var questionBox = document.getElementsByClassName('question-box')[0];
+var header = document.getElementsByClassName('header')[0];
 var close = document
   .getElementsByClassName('close')[0]
   .addEventListener('click', () => {
     container.style.display = 'block';
+    header.style.display = 'block';
     questionBox.style.display = 'none';
+
   });
 box.forEach((ele) => {
   ele.addEventListener('click', (e) => {
@@ -25,10 +28,13 @@ box.forEach((ele) => {
     container.style.display = 'none';
     console.log(questionBox);
     questionBox.style.display = 'block';
+    header.style.display = 'none';
+
     document.getElementsByClassName('okay')[0].addEventListener('click', () => {
       e.target.style.backgroundColor = '';
       container.style.display = 'block';
       questionBox.style.display = 'none';
+      header.style.display = 'block';
     });
   });
 });
