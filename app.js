@@ -34,7 +34,7 @@ box.forEach((ele) => {
 
     container.style.display = 'none';
     questionBox.style.display = 'block';
-    header.style.display = 'none';
+    // header.style.display = 'none';
     document.getElementById('question-number').innerHTML = questionNumber;
     document.getElementsByClassName('okay')[0].addEventListener('click', () => {
       let result = document.querySelector('input[name="answer"]:checked').value;
@@ -47,7 +47,7 @@ box.forEach((ele) => {
             e.target.style.backgroundColor = '';
             container.style.display = 'block';
             questionBox.style.display = 'none';
-            header.style.display = 'block';
+            // header.style.display = 'block';
           });
       } else {
         swal({
