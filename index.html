@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="master.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+    <script type="text/javascript" src="question-1.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>ELA-Quiz</title>
 </head>
 
@@ -65,24 +67,24 @@
     <div class="question-box" style="display: none;">
         <span class="close">&times;</span>
         
-        <div><h4>Question 1<span class="bottom">/36</span></h4></div>
-        <div class="question"> <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aspernatur magnam iste et corporis cumque blanditiis?</h3></div>
-        <label class="container">One
+        <div><h4 style="display: flex; align-items: end;">Question&nbsp; <div id="question-number">Default</div><sub class="bottom">/36</sub></h4></div>
+        <div class="question"> <h3 id="question">Default question?</h3></div>
+        <label class="container"><div id="op-1">Default</div>
             <input type="radio" name="answer" value="1" checked="checked">
             <span class="checkmark"></span>
           </label>
           
-          <label class="container" >Two
+          <label class="container" ><div id="op-2">Default</div>
             <input type="radio" name="answer" value="2" >
             <span class="checkmark"></span>
           </label>
           
-          <label class="container">Three
+          <label class="container"><div id="op-3">Default</div>
             <input type="radio" name="answer" value="3" >
             <span class="checkmark"></span>
           </label>
           
-          <label class="container">Four
+          <label class="container"><div id="op-4">Default</div>
             <input type="radio" name="answer" value="4" >
             <span class="checkmark"></span>
           </label> 
