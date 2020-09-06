@@ -7,7 +7,7 @@ box.forEach((ele) => {
   ele.style.height = `${height}px`;
 });
 box.forEach((ele) => {
-  ele.style.backgroundColor = '#252C4A';
+  ele.style.backgroundColor = 'rgb(34, 229, 255)';
 });
 
 var container = document.getElementsByClassName('container-main')[0];
@@ -54,7 +54,7 @@ box.forEach((ele) => {
           title: 'Wrong',
           icon: 'error',
         }).then(() => {
-          e.target.style.backgroundColor = '';
+          // e.target.style.backgroundColor = '';
           container.style.display = 'block';
           questionBox.style.display = 'none';
           header.style.display = 'block';

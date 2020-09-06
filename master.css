@@ -1,6 +1,6 @@
 .container-main {
   max-height: 500px;
-  max-width: 500px;
+  max-width: 550px;
   /* background-color: black; */
   margin: auto;
   background-image: url('udaya.png');
@@ -12,7 +12,7 @@ border-radius: 10px;
   max-height: auto;
   max-width: 500px;
   margin: auto;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
 }
 body {
@@ -20,11 +20,11 @@ body {
   font-family: 'Roboto Slab', serif;
 }
 .header {
-  max-width: 500px;
+  max-width: 1000px;
   margin: auto;
   text-align: center;
   background-image: url('header1.jpeg');
-  height: 100px;
+  height: 120px;
   background-size: 100% 100%;
   margin-bottom: 20px;
   border-radius: 10px;
