@@ -1,52 +1,201 @@
-.container{
-    max-height: 500px;
-    max-width: 500px;
-    /* background-color: black; */
-    margin:auto;
-    background-image: url("udaya.png");
-    background-size: 100% 100%;
+.container-main {
+  max-height: 500px;
+  max-width: 500px;
+  /* background-color: black; */
+  margin: auto;
+  background-image: url('udaya.png');
+  background-size: 100% 100%;
 }
-body{
-    background-color: rgb(206, 252, 255);
+.question-box {
+  max-height: auto;
+  max-width: 500px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
 }
-.header{
-    max-width: 500px;
-    margin:auto;
-    text-align:center;
+body {
+  background-color: #363b57;
+}
+.header {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
 }
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  [class*="col-"] {
-    float: left;
-    /* padding: 15px; */
-  }
-  
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%; }
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-  
+  content: '';
+  clear: both;
+  display: table;
+}
 
-  .col-2{
-      border: 1px solid rgb(0, 0, 0)
-  }
-  h2{
-      text-align: center;
-      
-  }
+[class*='col-'] {
+  float: left;
+  /* padding: 15px; */
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.col-2 {
+  border: 1px solid rgb(0, 0, 0);
+}
+h2 {
+  text-align: center;
+  color:white;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* /// */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 19px;
+  width: 19px;
+  background-color: #252C4A;
+  border-radius: 50%;
+  border:4px solid #20496B;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #107EEB;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #107EEB;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+/* .container .checkmark:after {
+  top: 5.5px;
+  left: 5.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(255, 255, 255);
+  
+} */
+
+.container {
+  display: block;
+  /* position: relative; */
+  padding: 10px 10px 10px 50px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #fff9f9;
+  border-radius: 10px;
+  border:4px solid #20496B;
+  background-color: #252C4A;
+  color:white;
+}
+.question {
+  display: block;
+  position: relative;
+  padding: 10px 10px 10px 50px;
+  margin-bottom: 8px;
+  background-color: #fff9f9;
+  border-radius: 10px;
+  border:4px solid #20496B;
+  background-color: #252C4A;
+  color:white;
+}
+
+.question-box {
+  background-color: #252C4A;
+  border:4px solid #20496B;
+  border-radius: 10px;
+  padding:20px 40px;
+}
+h4{
+    color:#939CC6;
+    font-size:23px;
+}
