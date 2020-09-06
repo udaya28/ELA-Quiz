@@ -22,10 +22,20 @@ var close = document
   });
 box.forEach((ele) => {
   ele.addEventListener('click', (e) => {
-    console.log(e.target.id);
-    let questionNumber = e.target.id;
+    // console.log(e.target);
+    // console.log(e.target.parentElement);
+    // console.log(e.target.tagName)
+    if (e.target.tagName == 'H1') {
+      var questionNumber = e.target.parentElement.id;
+      // console.log(e.target.parentElement);
+      var ele = e.target.parentElement;
+    } else {
+      questionNumber = e.target.id;
+      ele = e.target;
+    }
+
     let question = data[questionNumber];
-    console.log(question);
+    // console.log(question);
     document.getElementById('question').innerHTML = question['question'];
     document.getElementById('op-1').innerHTML = question[1];
     document.getElementById('op-2').innerHTML = question[2];
@@ -38,17 +48,18 @@ box.forEach((ele) => {
     document.getElementById('question-number').innerHTML = questionNumber;
     document.getElementsByClassName('okay')[0].addEventListener('click', () => {
       let result = document.querySelector('input[name="answer"]:checked').value;
-      console.log(result);
+      // console.log(result);
       if (result == question['ans']) {
         swal({
           title: 'Correct',
           icon: 'success',
         }).then(() => {
-            e.target.style.backgroundColor = '';
-            container.style.display = 'block';
-            questionBox.style.display = 'none';
-            // header.style.display = 'block';
-          });
+          ele.style.backgroundColor = '';
+          e.target.innerHTML = "";
+          container.style.display = 'block';
+          questionBox.style.display = 'none';
+          // header.style.display = 'block';
+        });
       } else {
         swal({
           title: 'Wrong',

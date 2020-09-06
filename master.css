@@ -256,3 +256,7 @@ h3{
   .swal-button:not([disabled]):hover{
     background-color: #107eeb;
   }
+
+  h1{
+    text-align:center;
+  }
