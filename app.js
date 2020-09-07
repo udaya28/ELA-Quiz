@@ -7,7 +7,7 @@ box.forEach((ele) => {
   ele.style.height = `${height}px`;
 });
 box.forEach((ele) => {
-  ele.style.backgroundColor = 'rgb(34, 229, 255)';
+  ele.style.backgroundColor = 'rgb(184, 238, 255)';
 });
 
 var container = document.getElementsByClassName('container-main')[0];
