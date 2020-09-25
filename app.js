@@ -37,10 +37,17 @@ box.forEach((ele) => {
     let question = data[questionNumber];
     // console.log(question);
     document.getElementById('question').innerHTML = question['question'];
+    try{
+      document.getElementById("image").setAttribute("src",`${question.url}`)
+    }catch{
+      document.getElementById("image").setAttribute("src","")
+    }
+    
     document.getElementById('op-1').innerHTML = question[1];
     document.getElementById('op-2').innerHTML = question[2];
     document.getElementById('op-3').innerHTML = question[3];
     document.getElementById('op-4').innerHTML = question[4];
+    // document.getElementById("checkMark").setAttribute("checked" ,"checked");
 
     container.style.display = 'none';
     questionBox.style.display = 'block';
@@ -69,6 +76,7 @@ box.forEach((ele) => {
           container.style.display = 'block';
           questionBox.style.display = 'none';
           header.style.display = 'block';
+          
         });
       }
     });

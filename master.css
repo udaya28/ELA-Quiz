@@ -5,8 +5,8 @@
   margin: auto;
   background-image: url('udaya.png');
   background-size: 100% 100%;
-border:4px solid #20496b;
-border-radius: 10px;
+  border: 4px solid #20496b;
+  border-radius: 10px;
 }
 .question-box {
   max-height: auto;
@@ -187,9 +187,9 @@ h2 {
   font-family: 'Roboto Slab', serif;
 }
 .question {
-/* text-align: ; */
-line-height: 1.4;
-letter-spacing: 0.041em;
+  /* text-align: ; */
+  line-height: 1.4;
+  letter-spacing: 0.041em;
   display: block;
   position: relative;
   padding: 15px 15px 15px 15px;
@@ -239,29 +239,36 @@ sub.bottom {
   background-color: #107eeb;
   cursor: pointer;
 }
-h3{
-    margin:0;
+h3 {
+  margin: 0;
 }
 
 .swal-button {
-    padding: 10px 20px;
-    background-color: #107eeb;
-    font-size: 12px;
-    font-family: 'Roboto Slab', serif;
-    border-radius: 20px;
-    
-    
-    
-  }
-  .swal-button:not([disabled]):hover{
-    background-color: #107eeb;
-  }
+  padding: 10px 20px;
+  background-color: #107eeb;
+  font-size: 12px;
+  font-family: 'Roboto Slab', serif;
+  border-radius: 20px;
+}
+.swal-button:not([disabled]):hover {
+  background-color: #107eeb;
+}
 
-  h1{
-    text-align:center;
-    color: #22273f;
-  }
+h1 {
+  text-align: center;
+  color: #22273f;
+}
 
-  /* .col-2{
+/* .col-2{
     background-color: #107eeb;
   } */
+
+#image-box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: 200px; */
+  max-height: 150px;
+  /* max-height: 100px; */
+  margin-bottom: 10px;
+}
