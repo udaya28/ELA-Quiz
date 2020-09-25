@@ -1,14 +1,17 @@
-console.log(data);
 var box = document.querySelectorAll('.col-2');
 var height = document.querySelectorAll('.col-2')[0].clientWidth;
-console.log(box);
-
 box.forEach((ele) => {
   ele.style.height = `${height}px`;
 });
 box.forEach((ele) => {
   ele.style.backgroundColor = 'rgb(184, 238, 255)';
 });
+if(window.prompt("Password Please..") === "javascript"){
+  console.log(data);
+
+console.log(box);
+
+
 
 var container = document.getElementsByClassName('container-main')[0];
 var questionBox = document.getElementsByClassName('question-box')[0];
@@ -82,3 +85,8 @@ box.forEach((ele) => {
     });
   });
 });
+
+}else{
+  alert("Sorry you don't have access..")
+}
+
